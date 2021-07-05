@@ -56,7 +56,8 @@ const ContactDetails = () => {
                             <Form.Control type="file" placeholder="Image" onChange={changeModelHandler} /> 
                             {/* not implemented */}
                         </Form.Group>         
-                        <Button variant="primary" onClick={() => contactAction(contact, file, history)}>Edit contact</Button>
+                        <Button variant="primary" onClick={() => contactAction(contact, file, history)}>
+                            {contactId.contactId ? "Edit contact" : "Add contact"}</Button>
                     </Form>
                 </Col>
             </Row>
